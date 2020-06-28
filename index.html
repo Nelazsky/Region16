@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <title>MFO</title>
+</head>
+<body>
+
+<!-- svg -->
+<svg style="display: none">
+    <symbol id="sircle" viewBox="0 0 512 512">
+        <g>
+		    <path d="M256,0C114.509,0,0,114.497,0,256c0,141.491,114.497,256,256,256c141.491,0,256-114.497,256-256
+			C512,114.509,397.503,0,256,0z M256,477.867c-122.337,0-221.867-99.529-221.867-221.867S133.663,34.133,256,34.133
+			S477.867,133.663,477.867,256S378.337,477.867,256,477.867z"/>
+	    </g>
+    </symbol>
+    <symbol id="coin" viewBox="0 0 60 72">
+        <g>
+              <image id="currency" width="60" height="72" xlink:href="data:img/png;base64,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"/>
+
+        </g>
+    </symbol>
+    <symbol id="request" viewBox="0 0 64 64">
+        <g>
+            <image id="request" width="64" height="64" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFYElEQVR4nO2be4gXVRTHPy5pilvRix5ImYmVYVtiDzN6P9UywsTVDDKRHrCGRYnVP0X20AqWKCmSHsqWSkUZrIURvehhiSE92DajgiRse2vlrsapM3E9zG/mzuvn/Ma+8Nvf3Hvnzu9+vztz7znnnuk3etKq2cAiYC8aC58Ak4Avaox6NHAjcA5wEPAb8C7wKLAS2CEnNTUoecFIJRiG24C1wDQlL2gGzgWWAy8FnJsalHyAQ0Lq5gB3Av0i+k0AOuScPUzDH8Dn+Y8zNwwAjom4mAhyt6nbBnwGDAH2depFhMlWACF/fMlIuxgKbIxovwIY5JQ3ABcB32r9YuBKp312U/FjritONj92vZIXbAWuAX502k+pmgAHmPLHprxVH4cAzVUTwAd/uefsjgLshP8FyOk6BwLjgD1zul7dYJfBNDgbeEENqvU6E/9ZEn6jgF9NXbNbyCqAkF/lrL0take8l/G6eeGNuOv4PgJidx9l6ix5wc9AV91pZoDPHXA7cIceLwBurUFe1tjLgB7T/2pgljk3Dn1Ap/729l0twCzneD5wBHBpCPmJwGumr5z7WIxjUgvizq5T1zUtOuy6D1zoeIheAohbeZhTbjXttcgLBqck7/bPguuAn0z/110BfOaAmcD7NdqiyKPOyP3AloQketVnfzZhv8TwEUAmtvNDRIgjH+Am507w/fQHLlH3fJcLgCPCO1ru8SRfeiSxA0SEM4Bjga+03PBIagj1qrVXGeThC+yjy40YQLc0mjBZBRDyrwBTgeHAPcDROY2tLsgiQED+JFOfZd2vO3zmACH4kD7/bWoY1SLfDnxq6g4FLk5hCq/RzY9C4SOAmLLH6bEM6nKNu1vyEnG9wdSJi/whcHAKEhLOHhMS18sVPgK4j8newOqQcxar2bnD1I9MSR41hk4rWgCfOWCu/jdqoRZ5dPDdKcf2O/Bqyr7e8LkDZBCT1Svrb9qiyKPmstzG5yV0bETwN4GvM/KLha8h9GKICHHkA4g3tqJYGumRxBIUEU4FpuvEtsyDfOmR1BReq5/KIK+w+AUaLbJxw9IjDwHmafzuLo0G77c7CTDP7MeLhTgi4zXrCp85YKCGxcQUftLZ9LDkUTN4Xcg1BiXcNerVnJ7C4SOAkJ6ix1M1EtQWQr5bo0burpA4Rk8AM1I4SW8D44FfihTB5xEY6xyfpdZdGPkznWSEAC2akZHGQxynfkeh8BGgw5SP9CQv2Ky3c1psKloAn0dgviYYTQtpiyKP1k/RzZWkprCsLC8n6JMKPgL0OYlFrghx5AM8r59SwncZDER4UG37NZ7kS48kpnCfusZzG4jfteqRuhjiFvJIkCgzFsSNrWo5QlGBmzBsr5oAdsmOw8qqCbBEAzcuxBa5SrfFXTwsq1o95gBJcD4hRVh8fUozeJQpP6Pm+A+6cgWQMfUVLcAAtenHpOi7SUPv3yTsN92Ul+p3p4qwv5bFxB9W9CPQkpI8Gk6fmLDPWN2iC9DlZKxtC0m4mFG0AN0Zt9E/Sni+NdefNuWnTLm16EegRzc3WlP6AknzDa2j9qUpb9RAbuCdDqvHJLhBU+vqgU59QSLAHI1eB2gzrvnqKi6Dbp7iicDpetysprGLhVUTQMJoj5i6m/V7pgnYfiCptFVMl2832WUTdDWyTtx98qeKAnwfMttLNvvhTlletnxODqr6wsQis2031LQ/EOQgV1WArogo1GY1jf+BXQaHhzgNZcLABGNZqNnrFu1ukMQKMFiTIasAeVH6LTXEAmxRL/A/NIW8UtJI+C5mrPea8hJ1iHYSQJKZG1EEySCTTPQoSFj9cZ3wZN0PXvz4F8DfiHMOX284O9sAAAAASUVORK5CYII="/>
+        </g>
+    </symbol>
+    <symbol id="clipboard" viewBox="0 0 77 77">
+        <g>
+            <image id="clipboard" width="77" height="77" xlink:href="data:img/png;base64,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"/>
+        </g>
+    </symbol>
+    <symbol id="documents" viewBox="0 0 60 66">
+        <g>
+            <image id="documents" width="60" height="66" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABCCAYAAAAL1LXDAAAD2klEQVRoge2bS2jUQBjHfy0rvltbKVgVfF+UYnFBPCg+DgWJ4orWi4oHwaIHUUEUFOxBBEHQgyg+oCCoICoRXQ96qB58IdHqyYMvfKAgWKu1Ij6ZMlvikGaym2ySxvwgh918+TL/3e+bmXwzqZi17AoO7AJ2A0OcTsaA30AeWGuZRlcxzal0+K4O2Btjsch2LwWuZXP56mIvVBlXliaWh9nFis54sPkOvPfR3LHAIJfzP4G3Gh9VQE0/5wqim7yEtxfBd4EFHuz6owOYaTv3Q/kBRBv2A0ddfGwBDrr48CzaKaTLzVrgs3KPI8DGIu57CGhXvvMU3lEIvgc0+RTdAywpRXQUgolSdFSC0Yhe5dGHm+iL2Vy+Qr0gCsFzZCcojqHAPgeb9RofE20+hLgDDj39ImCyeqGXXjpoznrwN1hzfp08dIxUz0cZ0sXwOyhHYQjuCMCHFYCPXsII6a3AB2Cai021ZnJzC1gNLNfM2uYCo90aE4bgTmC7xqYReKixOSOPf7BMo+9jNpe/Acx3czJQcjgwUsFJJxWcdP47wYVhSdSx1sjxcIxiI+atrT7u0Q2cBt758BEYGXncBqb243QCsMfnDTcBM4BvEenso1LOgPoTGxSTgJZwpTlT6eHJJCh2yMfBSHGaWj4DDgfUqFbZLyD7hhZZj4oMJ8FvAmzUKCX/xb98LMpcLvewJH44e9l0TNS5XG7BnxyiJdJcFotp6qPZTZ+FdxUR1i9tuSx4JH+MAiPE053tc1eJhYNG5T6WnAd8FXUvyzTawxCM7Lz8juV++QLUhzW1VHM5CkRBb0pYgkX4bpZrQlFSGWaZ9hRwWU5Vw+Kk0jeEXpfulEdg2GtaKtlcvlv9Ln0eTjqp4KSTCk46qeCkkwpOOv9tIT4O2BcDPJPNiU21vQ/45y3TeDFQBGfkKr/bLgEdO7O5/DTLND662cUlpMf7FCuoBWbpjOIi+DXw2KcPsXZ1X2cUl5D+BcwDVhSbwxKRw5eD2j4cFmILYlux93IrADiRjsNJJ04hvRDY5rQ/0g05Dou1qjbLNM7p7OMieDhwqVixCk3ZXP6BZRpP3YziEtJVPsUitdR7MYoDYgw94bMd14E7OqM45fAG+YJYbQnXinWj55Zp/NEZxkmw4JU8PFPKOKxW5+uCan0MULV0Z+Q89rttc8t0uUp/HNCGSByRL3eIFJlua57Q+Lrwdul5OY+18znodaAQqZE9v50LlmmsLOSweHV2MTDMZlDlcNFApUdq7BuWngDNDvmcBISmZss0hMZ/xuGrQIPcVqR723MgIDQILQ2WaQhtAPwFaOHTfVN7n10AAAAASUVORK5CYII="/>
+        </g>
+    </symbol>
+    <symbol id="hand" viewBox="0 0 73 65">
+        <g>
+            <image id="shipping-and-delivery" width="73" height="65" xlink:href="data:img/png;base64,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"/>
+        </g>
+    </symbol>
+    <symbol id="computer" viewBox="0 0 79 80">
+        <g>
+            <image id="order" width="79" height="80" xlink:href="data:img/png;base64,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"/>
+        </g>
+    </symbol>
+    <symbol id="star" viewBox="0 0 28 28">
+        <g>
+            <image id="favourites-filled-star-symbol" width="28" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABwElEQVRIib2WMUscQRTHf554kKCFFsedUcEgAb+ARCFRA1aKWPkJkiIp0vlVAoHY+BVSpEwXiHBWQjiE0wSTgCLINRbK/eUlc2GzzO7N7J7+YZjdmffeb2fmzc4MSaKAFoAb4CDa1YCR5YX+qivpaax/pcDo3rp6KPEcrNgpnQZO4N+HXgNTwFlogNgRvkr5jAAvYwLEjNCCfwcaqfYfwCzQDQkSM8JND8w0A6yHBokBvsnpex0cJTCdN5Qv2yJrIbFsDceBReARUAMmXZ18fxD4/VfAT5e1Vp8n3n8BXwx4BMwFT0k5fbM1nLgnmKlecdl3cQ+wS2Crt5hPJLX7JEYZnUia/7PnExlUk7R/B7ADSfUeJ522DyV9HCDsk6TRJMO3V4YlvRsA7IOLRT9gr7wvAdstch5+LZGRzayOPOBSCeBCEeDzEsBM36zzsA78LgHE3Q5O041ZI1wpCTM98zVmAb3GTi1g25VWjt2ytzUjfQ89qd6RtCOpmrCruraOx/7QF9sHm/A470lq5OzZhrNJy2L1Bdqv6NJ5NiUtRlx0zdZ8TBZjzHfi+2babmGPgc+ht7GELC9WgTZw/F8PcAvrmgcmgXIQRQAAAABJRU5ErkJggg=="/>
+        </g>
+    </symbol>
+</svg>
+
+
+<!-- header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <img class="header__img" src="assets/img/header/region.png" alt="Регион">
+            <div class="header__nav">
+                <a class="header__link" href="#advantage">Преимущества</a>
+                <a class="header__link" href="#">Процесс регистрации</a>
+                <a class="header__link" href="#">Стоимость</a>
+            </div>
+            <a href="tel:+88009999999" class="header__number">8-800-999-99-99</a>
+        </div>
+    </div>
+</header> <!-- /.header -->
+
+
+<!-- блок с регистрацией мфо -->
+<div class="registration">
+    <div class="container">
+        <div class="registration__inner">
+            <div class="registration__title title">Зарегистрируем МФО 
+по упрощенным правилам!</div>
+            <div class="registration__text">При подачи документов  до 30 апреля Gold статус в подарок. Подробности можно узнать у менеджера.</div>
+            <a class="registration__link" href="#">Зарегистрировать МФО</a>
+        </div>
+        <img class="registration__img" src="assets/img/registration/peoples.png" alt="">
+    </div>
+</div>
+
+
+
+<!-- Блок с преимуществами -->
+<div class="advantage" id="advantage">
+    <div class="container">
+        <div class="advantage__title title">Преимущества работы с нами</div>
+        
+        <div class="advantage__item">
+            <div class="advantage__img">
+                <svg class="advantage__icon">
+                    <use xlink:href="#sircle"></use>
+                </svg>
+                <img class="advantage__icon__inner" src="assets/img/advantage/10.png" alt="10">
+            </div>
+            <div class="advantage__subtext">10 лет работы на рынке</div>
+            <div class="advantage__text">За это время мы приобрели необходимый опыт работы с микрофинансовыми организациями и их взаимодействием с государственными регуляторами финансовых услуг. </div>
+        </div>
+        <div class="advantage__item">
+            <div class="advantage__img">
+                <svg class="advantage__icon">
+                    <use xlink:href="#sircle"></use>
+                </svg>
+                <svg class="advantage__icon__inner coin">
+                    <use xlink:href="#coin"></use>
+                </svg>
+            </div>
+            <div class="advantage__subtext">Демократичные цены</div>
+            <div class="advantage__text">За это время мы приобрели необходимый опыт работы с микрофинансовыми организациями и их взаимодействием с государственными регуляторами финансовых услуг. </div>
+        </div>
+        <div class="advantage__item">
+            <div class="advantage__img">
+                <svg class="advantage__icon">
+                    <use xlink:href="#sircle"></use>
+                </svg>
+                <svg class="advantage__icon__inner request">
+                    <use xlink:href="#request"></use>
+                </svg>
+            </div>
+            <div class="advantage__subtext">Все включено</div>
+            <div class="advantage__text">За это время мы приобрели необходимый опыт работы с микрофинансовыми организациями и их взаимодействием с государственными регуляторами финансовых услуг. </div>
+        </div>
+        
+    </div> <!-- /.container -->
+</div> <!-- /.advantage -->
+
+
+
+
+<!-- Блок с услугами -->
+<div class="services">
+    <div class="container">
+        <div class="title">Что входит в услуги</div>
+        <div class="services__inner">
+            <div class="services__item">
+                <svg class="services__icon">
+                    <use xlink:href="#sircle"></use>
+                </svg>
+                <svg class="services__icon__inner">
+                    <use xlink:href="#documents">
+                </use>
+                </svg>
+                <div class="services__text">Подготовка ядокументации для ИФНС</div>
+            </div>
+            
+            <div class="services__item">
+                <svg class="services__icon">
+                    <use xlink:href="#sircle"></use>
+                </svg>
+                <svg class="services__icon__inner">
+                    <use xlink:href="#hand">
+                </use>
+                </svg>
+                <div class="services__text">Подача документации в ИФНС</div>
+            </div>
+            
+            <div class="services__item">
+                <svg class="services__icon">
+                    <use xlink:href="#sircle"></use>
+                </svg>
+                <svg class="services__icon__inner">
+                    <use xlink:href="#computer">
+                </use>
+                </svg>
+                <div class="services__text">Подготовка документов для включения в гос.реестр</div>
+            </div>
+            
+            <div class="services__item">
+                <svg class="services__icon">
+                    <use xlink:href="#sircle"></use>
+                </svg>
+                <svg class="services__icon__inner">
+                    <use xlink:href="#clipboard">
+                </use>
+                </svg>
+                <div class="services__text">Проверка наличия документов и их соответствия требованиям гос.органов</div>
+            </div>
+        </div><!-- /.services__inner -->
+    </div><!-- /.container -->
+</div><!-- /.services -->
+
+
+
+
+<!-- Блок про вступление в СРО -->
+<div class="sro">
+    <div class="container">
+        <div class="sro__inner">
+            <img class="sro__img" src="assets/img/sro/peoples_sro.png" alt="">
+            <div class="sro__item">
+                <div class="sro__text">Мы все сделаем за вас - вам останется только вступить в СРО и начать выдавать займы!</div>
+            </div>
+            <div class="sro__item sro__item--position">
+                <div class="sro__text">Мы так же можем помочь вам вступить в СРО.</div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.sro -->
+
+
+
+<!-- Блок с расценками -->
+<div class="price">
+    <div class="container">
+        <div class="title">Стоимость услуг</div>
+        <div class="price__inner">
+            <div class="price__item">
+                <div class="price__text">Подготовка документов для подачи в ФСН</div>
+                <div class="price__value">10 000 р.</div>
+                <a class="price__link" href="#">Заказать</a>
+            </div>
+            
+            <div class="price__item">
+                <div class="price__text">Подготовка документов для подачи в ФСН</div>
+                <div class="price__value">15 000 р.</div>
+                <a class="price__link" href="#">Заказать</a>
+            </div>
+            
+            <div class="price__item best">
+                <div class="price__text">Подготовка документов для подачи в ФСН</div>
+                <div class="price__value">25 000 р.</div>
+                <a class="price__link" href="#">Заказать</a>
+            </div>
+        </div><!-- /.price__inner -->
+    </div><!-- /.container -->
+</div><!-- /.price -->
+
+
+
+<!-- Блок с формой для связи -->
+<div class="communication">
+    <div class="container">
+        <div class="title">Свяжитесь с нами</div>
+        <form class="communication__form" action="#" method="post">
+            <input class="input communication__form__name" type="text" placeholder="Ваше имя" required>
+            <input class="input communication__form__number"  type="text" placeholder="Ваш телефон" required>
+            <input class="input communication__form__message" type="text" placeholder="Ваше сообщение (необязательно)">
+            <input class="communication__form__submit" type="submit">
+        </form>
+        <div class="communication__copyright">2020. Компания “Регион”</div>
+    </div><!-- /.container -->
+</div><!-- /.communication -->
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
